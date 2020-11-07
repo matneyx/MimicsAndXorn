@@ -3,3 +3,10 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+.idea
+_site
+node_modules
+
+.publish
+.DS_Store
