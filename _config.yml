@@ -27,7 +27,7 @@ twitter_username: matneyx
 github_username:  matneyx
 
 # Build settings
-theme: bulma-clean-theme
+theme: jekyll-theme-time-machine
 plugins:
   - jekyll-feed
 
