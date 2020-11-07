@@ -30,6 +30,7 @@ source: ./
 
 # Build settings
 theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme
 
 plugins:
   - jekyll-minifier
