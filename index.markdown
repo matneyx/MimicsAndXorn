@@ -6,3 +6,5 @@ layout: home
 title: "Mimics and Xorn: A Classless and Levelless 5e compatible variant"
 permalink: /
 ---
+# MimicsAndXorn
+A living open-source, 5e compatible RPG.
