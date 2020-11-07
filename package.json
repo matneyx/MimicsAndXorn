@@ -1,0 +1,32 @@
+{
+  "name": "mimicsandxorn",
+  "version": "1.0.0",
+  "description": "A living open-source, 5e compatible RPG.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "bundle exec npx gulp",
+    "deploy": "bundle exec npx gulp deploy",
+    "clean": "bundle exec npx gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matneyx/MimicsAndXorn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matneyx/MimicsAndXorn/issues"
+  },
+  "homepage": "https://matneyx.github.io/MimicsAndXorn/",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "cssnano": "^4.1.10",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.6.0-6",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
