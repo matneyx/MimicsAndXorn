@@ -20,7 +20,7 @@
 
 title: Mimics and Xorn
 email: matneyx@gmail.com
-description: A class- and level-less 5e compatible RPG.
+description: A class- and level-less 5e variant.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://matneyx.github.io/MimicsAndXorn" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: matneyx
@@ -29,8 +29,7 @@ github_username:  matneyx
 source: ./
 
 # Build settings
-theme: bulma-clean-theme
-remote_theme: chrisrhymes/bulma-clean-theme
+theme: jekyll-theme-midnight
 
 plugins:
   - jekyll-minifier

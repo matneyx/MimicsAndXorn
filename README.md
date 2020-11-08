@@ -1,5 +1,5 @@
 # MimicsAndXorn
-A living open-source, 5e compatible RPG.
+A living open-source, 5e variant.
 
 # jekyll-gulp-boilerplate
 

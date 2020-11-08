@@ -1,7 +1,7 @@
 {
   "name": "mimicsandxorn",
   "version": "1.0.0",
-  "description": "A living open-source, 5e compatible RPG.",
+  "description": "A living open-source, 5e variant.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "bundle exec npx gulp",
