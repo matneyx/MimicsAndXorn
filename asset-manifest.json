@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/MimicsAndXorn/static/css/main.901bfa7c.chunk.css",
-    "main.js": "/MimicsAndXorn/static/js/main.cddace7a.chunk.js",
-    "main.js.map": "/MimicsAndXorn/static/js/main.cddace7a.chunk.js.map",
+    "main.css": "/MimicsAndXorn/static/css/main.230f21ec.chunk.css",
+    "main.js": "/MimicsAndXorn/static/js/main.f8c999c4.chunk.js",
+    "main.js.map": "/MimicsAndXorn/static/js/main.f8c999c4.chunk.js.map",
     "runtime-main.js": "/MimicsAndXorn/static/js/runtime-main.48c3dafb.js",
     "runtime-main.js.map": "/MimicsAndXorn/static/js/runtime-main.48c3dafb.js.map",
-    "static/js/2.9d6b2e0c.chunk.js": "/MimicsAndXorn/static/js/2.9d6b2e0c.chunk.js",
-    "static/js/2.9d6b2e0c.chunk.js.map": "/MimicsAndXorn/static/js/2.9d6b2e0c.chunk.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/MimicsAndXorn/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.2a5f8fc9.chunk.js": "/MimicsAndXorn/static/js/2.2a5f8fc9.chunk.js",
+    "static/js/2.2a5f8fc9.chunk.js.map": "/MimicsAndXorn/static/js/2.2a5f8fc9.chunk.js.map",
     "index.html": "/MimicsAndXorn/index.html",
-    "static/css/main.901bfa7c.chunk.css.map": "/MimicsAndXorn/static/css/main.901bfa7c.chunk.css.map",
-    "static/js/2.9d6b2e0c.chunk.js.LICENSE.txt": "/MimicsAndXorn/static/js/2.9d6b2e0c.chunk.js.LICENSE.txt"
+    "static/css/2.1a02f21c.chunk.css.map": "/MimicsAndXorn/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.230f21ec.chunk.css.map": "/MimicsAndXorn/static/css/main.230f21ec.chunk.css.map",
+    "static/js/2.2a5f8fc9.chunk.js.LICENSE.txt": "/MimicsAndXorn/static/js/2.2a5f8fc9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.48c3dafb.js",
-    "static/js/2.9d6b2e0c.chunk.js",
-    "static/css/main.901bfa7c.chunk.css",
-    "static/js/main.cddace7a.chunk.js"
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.2a5f8fc9.chunk.js",
+    "static/css/main.230f21ec.chunk.css",
+    "static/js/main.f8c999c4.chunk.js"
   ]
 }
