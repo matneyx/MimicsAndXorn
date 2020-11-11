@@ -1,0 +1,32 @@
+{
+  "name": "mimicsandxorn",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matneyx/MimicsAndXorn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matneyx/MimicsAndXorn/issues"
+  },
+  "homepage": "https://matneyx.github.io/MimicsAndXorn",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "0.9.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
