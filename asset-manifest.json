@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MimicsAndXorn/static/css/main.901bfa7c.chunk.css",
-    "main.js": "/MimicsAndXorn/static/js/main.e1df3e45.chunk.js",
-    "main.js.map": "/MimicsAndXorn/static/js/main.e1df3e45.chunk.js.map",
+    "main.js": "/MimicsAndXorn/static/js/main.cddace7a.chunk.js",
+    "main.js.map": "/MimicsAndXorn/static/js/main.cddace7a.chunk.js.map",
     "runtime-main.js": "/MimicsAndXorn/static/js/runtime-main.48c3dafb.js",
     "runtime-main.js.map": "/MimicsAndXorn/static/js/runtime-main.48c3dafb.js.map",
     "static/js/2.9d6b2e0c.chunk.js": "/MimicsAndXorn/static/js/2.9d6b2e0c.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.48c3dafb.js",
     "static/js/2.9d6b2e0c.chunk.js",
     "static/css/main.901bfa7c.chunk.css",
-    "static/js/main.e1df3e45.chunk.js"
+    "static/js/main.cddace7a.chunk.js"
   ]
 }
