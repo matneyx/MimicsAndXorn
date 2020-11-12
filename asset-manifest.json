@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/MimicsAndXorn/static/css/main.230f21ec.chunk.css",
-    "main.js": "/MimicsAndXorn/static/js/main.f8c999c4.chunk.js",
-    "main.js.map": "/MimicsAndXorn/static/js/main.f8c999c4.chunk.js.map",
-    "runtime-main.js": "/MimicsAndXorn/static/js/runtime-main.48c3dafb.js",
-    "runtime-main.js.map": "/MimicsAndXorn/static/js/runtime-main.48c3dafb.js.map",
+    "main.css": "/MimicsAndXorn/static/css/main.e0a85f98.chunk.css",
+    "main.js": "/MimicsAndXorn/static/js/main.a76c38ef.chunk.js",
+    "main.js.map": "/MimicsAndXorn/static/js/main.a76c38ef.chunk.js.map",
+    "runtime-main.js": "/MimicsAndXorn/static/js/runtime-main.05dea97c.js",
+    "runtime-main.js.map": "/MimicsAndXorn/static/js/runtime-main.05dea97c.js.map",
     "static/css/2.1a02f21c.chunk.css": "/MimicsAndXorn/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.2a5f8fc9.chunk.js": "/MimicsAndXorn/static/js/2.2a5f8fc9.chunk.js",
-    "static/js/2.2a5f8fc9.chunk.js.map": "/MimicsAndXorn/static/js/2.2a5f8fc9.chunk.js.map",
+    "static/js/2.f3c23ea2.chunk.js": "/MimicsAndXorn/static/js/2.f3c23ea2.chunk.js",
+    "static/js/2.f3c23ea2.chunk.js.map": "/MimicsAndXorn/static/js/2.f3c23ea2.chunk.js.map",
+    "static/js/3.5d7060b9.chunk.js": "/MimicsAndXorn/static/js/3.5d7060b9.chunk.js",
+    "static/js/3.5d7060b9.chunk.js.map": "/MimicsAndXorn/static/js/3.5d7060b9.chunk.js.map",
     "index.html": "/MimicsAndXorn/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/MimicsAndXorn/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.230f21ec.chunk.css.map": "/MimicsAndXorn/static/css/main.230f21ec.chunk.css.map",
-    "static/js/2.2a5f8fc9.chunk.js.LICENSE.txt": "/MimicsAndXorn/static/js/2.2a5f8fc9.chunk.js.LICENSE.txt"
+    "static/css/main.e0a85f98.chunk.css.map": "/MimicsAndXorn/static/css/main.e0a85f98.chunk.css.map",
+    "static/js/2.f3c23ea2.chunk.js.LICENSE.txt": "/MimicsAndXorn/static/js/2.f3c23ea2.chunk.js.LICENSE.txt",
+    "static/media/GolarionActionEconomy.md": "/MimicsAndXorn/static/media/GolarionActionEconomy.67f1842d.md"
   },
   "entrypoints": [
-    "static/js/runtime-main.48c3dafb.js",
+    "static/js/runtime-main.05dea97c.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.2a5f8fc9.chunk.js",
-    "static/css/main.230f21ec.chunk.css",
-    "static/js/main.f8c999c4.chunk.js"
+    "static/js/2.f3c23ea2.chunk.js",
+    "static/css/main.e0a85f98.chunk.css",
+    "static/js/main.a76c38ef.chunk.js"
   ]
 }
