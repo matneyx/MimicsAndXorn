@@ -8,6 +8,21 @@ const StyledNavbar = styled(Navbar)`
   height: 90px;
 `;
 
+const menus = {
+  name: 'Rules',
+  data: [
+    {
+      name: 'Combat',
+      data: [
+        {
+          name: 'Golarion Action Economy',
+          data: '../rules/combat/GolarionActionEconomy'
+        }
+      ]
+    }
+  ]
+};
+
 export default () => (
   <StyledNavbar bg="light" expand="lg">
     <Navbar.Brand href="#home">
