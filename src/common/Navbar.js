@@ -18,22 +18,22 @@ const StyledImg = styled.img`
   max-width: 50%;
 `;
 
-const menus = {
-  name: 'Rules',
-  data: [
-    {
-      name: 'Combat',
-      data: [
-        {
-          name: 'Golarion Action Economy',
-          data: '../rules/combat/GolarionActionEconomy'
-        }
-      ]
-    }
-  ]
-};
+// const menus = {
+//   name: 'Rules',
+//   data: [
+//     {
+//       name: 'Combat',
+//       data: [
+//         {
+//           name: 'Golarion Action Economy',
+//           data: '../rules/combat/GolarionActionEconomy'
+//         }
+//       ]
+//     }
+//   ]
+// };
 
-export default () => (
+const MxNavbar =  () => (
   <StyledNavbar bg="light" expand="lg">
     <Navbar.Brand href="#home">
       <StyledImg
@@ -43,3 +43,5 @@ export default () => (
     </Navbar.Brand>
   </StyledNavbar>
 );
+
+export default MxNavbar;
