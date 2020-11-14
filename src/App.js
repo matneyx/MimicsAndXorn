@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './common/Navbar';
-import GolarionActionEconomy from './rules/combat/GolarionActionEconomy';
+import MarkdownRenderer from './common/MarkdownRenderer';
 import styled from 'styled-components';
 
 const MainBody = styled.div`
@@ -18,7 +18,8 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <MainBody>
-          <GolarionActionEconomy />
+          <MarkdownRenderer
+            markdownLocation={'./data/Intro.md'} />
         </MainBody>
       </div>
     );
