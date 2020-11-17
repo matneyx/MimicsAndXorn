@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Navbar from './common/Navbar';
 import MarkdownRenderer from './common/MarkdownRenderer';
 import styled from 'styled-components';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import intro from '!!raw-loader!./data/Intro.md';
 
 const MainBody = styled.div`
   background-color: #EEE5CE;
@@ -19,7 +21,7 @@ class App extends Component {
         <Navbar />
         <MainBody>
           <MarkdownRenderer
-            markdownLocation={'./data/Intro.md'} />
+            markdown={intro} />
         </MainBody>
       </div>
     );

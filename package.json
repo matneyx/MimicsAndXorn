@@ -92,6 +92,7 @@
     "js-yaml": ">=3.14.0",
     "mime": ">=2.4.6",
     "open": "^7.3.0",
+    "raw-loader": "^4.0.2",
     "webpack-dev-server": ">=3.11.0",
     "yargs-parser": ">=5.0.0-security.0"
   },
