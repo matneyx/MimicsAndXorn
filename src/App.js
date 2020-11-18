@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './common/Navbar';
 import MarkdownRenderer from './common/MarkdownRenderer';
 import styled from 'styled-components';
-// eslint-disable-next-line import/no-webpack-loader-syntax
-import intro from '!!raw-loader!./data/Intro.md';
+import NavigationProvider from './common/NavigationProvider';
 
 const MainBody = styled.div`
   background-color: #EEE5CE;
@@ -18,11 +17,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
-        <MainBody>
-          <MarkdownRenderer
-            markdown={intro} />
-        </MainBody>
+        <NavigationProvider>
+          <Navbar />
+          <MainBody>
+            <MarkdownRenderer />
+          </MainBody>
+        </NavigationProvider>
       </div>
     );
   }
