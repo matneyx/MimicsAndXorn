@@ -1,2 +1,0 @@
-(this.webpackJsonpmimicsandxorn=this.webpackJsonpmimicsandxorn||[]).push([[3],{145:function(i,n,c){"use strict";c.r(n),n.default=c.p+"static/media/GolarionActionEconomy.2066121c.md"}}]);
-//# sourceMappingURL=3.521d3ac2.chunk.js.map
