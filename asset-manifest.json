@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/MimicsAndXorn/static/css/main.5875ff90.chunk.css",
-    "main.js": "/MimicsAndXorn/static/js/main.f7153612.chunk.js",
-    "main.js.map": "/MimicsAndXorn/static/js/main.f7153612.chunk.js.map",
+    "main.css": "/MimicsAndXorn/static/css/main.1902383d.chunk.css",
+    "main.js": "/MimicsAndXorn/static/js/main.539e0f97.chunk.js",
+    "main.js.map": "/MimicsAndXorn/static/js/main.539e0f97.chunk.js.map",
     "runtime-main.js": "/MimicsAndXorn/static/js/runtime-main.48c3dafb.js",
     "runtime-main.js.map": "/MimicsAndXorn/static/js/runtime-main.48c3dafb.js.map",
     "static/css/2.1a02f21c.chunk.css": "/MimicsAndXorn/static/css/2.1a02f21c.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.f5b47f74.chunk.js.map": "/MimicsAndXorn/static/js/2.f5b47f74.chunk.js.map",
     "index.html": "/MimicsAndXorn/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/MimicsAndXorn/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.5875ff90.chunk.css.map": "/MimicsAndXorn/static/css/main.5875ff90.chunk.css.map",
+    "static/css/main.1902383d.chunk.css.map": "/MimicsAndXorn/static/css/main.1902383d.chunk.css.map",
     "static/js/2.f5b47f74.chunk.js.LICENSE.txt": "/MimicsAndXorn/static/js/2.f5b47f74.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.48c3dafb.js",
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.f5b47f74.chunk.js",
-    "static/css/main.5875ff90.chunk.css",
-    "static/js/main.f7153612.chunk.js"
+    "static/css/main.1902383d.chunk.css",
+    "static/js/main.539e0f97.chunk.js"
   ]
 }
