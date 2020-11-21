@@ -81,6 +81,7 @@ When you gain this feature, you also learn one language of your choice, typicall
 
 #### Fleet of Foot
 *8th-level ranger feature (Replaces Land's Stride)*
+
 Beginning at 8th level, you can use the Dash action as a bonus action on your turn.
 
 #### Greater Favored Enemy, Revised
@@ -92,6 +93,7 @@ Additionally, you have advantage on saving throws against the spells and abiliti
 
 #### Push Through
 *8th-level ranger feature (Replaces Land's Stride)*
+
 Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. In addition, you can move through the space occupied by local citizens as if they were allies. This does not apply to creatures intent on harming you. Areas that are enchanted or magically manipulated to impede motion, however, still affect you.
 
 In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the *entangle* spell.
