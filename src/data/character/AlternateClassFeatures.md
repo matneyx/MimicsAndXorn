@@ -100,6 +100,7 @@ In addition, you have advantage on saving throws against plants that are magical
 
 #### Urban Awareness
 *3rd-level ranger feature (Replaces Primeval Awareness)*
+
 Beginning at 3rd level, your mastery of ranger lore allows you to establish a powerful link to beasts and to the city around you.
 
 You have an innate ability to communicate with beasts, and they recognize you as a kindred spirit. Through sounds and gestures, you can communicate simple ideas to a beast as an action, and can read its basic mood and intent. You learn its	emotional state, whether it is affected by magic of any sort, its short-term needs (such as food or safety), and actions you can take (if any) to persuade it to not attack.
