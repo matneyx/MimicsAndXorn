@@ -1,8 +1,9 @@
 import React, { createContext, useState } from 'react';
 
 /* eslint-disable import/no-webpack-loader-syntax */
-import GAE from '!!raw-loader!../data/rules/combat/GolarionActionEconomy.md';
 import intro from '!!raw-loader!../data/Intro.md';
+import acf from '!!raw-loader!../data/character/AlternateClassFeatures.md';
+import gae from '!!raw-loader!../data/rules/combat/GolarionActionEconomy.md';
 /* eslint-enable */
 
 const home = {
@@ -14,11 +15,24 @@ const home = {
 const golarionActionEconomy = {
   name: 'Golarion Action Economy',
   key: 'gae-link',
-  data: GAE
+  data: gae
 };
+
+const alternateClassFeatures = {
+  name: 'Alternate Class Features',
+  key: 'acf-link',
+  data: acf
+}
 
 export const navigationMenus = [
   home,
+  {
+    name: 'Character',
+    key: 'character-dropdown',
+    data: [
+      alternateClassFeatures
+    ]
+  },
   {
     name: 'Rules',
     key: 'rules-dropdown',
