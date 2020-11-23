@@ -1,16 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import '../styles/phb.standalone.css';
-import { NavigationContext } from './NavigationProvider';
 
-const MarkdownRenderer = () => {
-  const { activePage } = useContext(NavigationContext);
-
-  return (
+const MarkdownRenderer = ({data}) =>
     <ReactMarkdown
       className="phb"
-      children={activePage.data} />
-  );
-};
+      children={data} />;
 
 export default MarkdownRenderer;
