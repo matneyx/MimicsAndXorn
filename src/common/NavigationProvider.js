@@ -1,4 +1,7 @@
-import React, { createContext, useState } from 'react';
+import React, {
+  createContext,
+  useState
+} from 'react';
 import MarkdownRenderer from './MarkdownRenderer';
 
 /* eslint-disable import/no-webpack-loader-syntax */
@@ -17,7 +20,8 @@ export const home = {
 const golarionActionEconomy = {
   name: 'Golarion Action Economy',
   key: 'golarion-action-economy',
-  data: gae
+  data: gae,
+  homebreweryLink: 'https://www.google.com'
 };
 
 const alternateClassFeatures = {
@@ -29,7 +33,8 @@ const alternateClassFeatures = {
 const urbanRanger = {
   name: 'Urban Ranger',
   key: 'urban-ranger-link',
-  data: ur
+  data: ur,
+  homebreweryLink: 'https://www.nfl.com'
 };
 
 export const navigationMenus = [
@@ -37,22 +42,20 @@ export const navigationMenus = [
   {
     name: 'Character',
     key: 'character-dropdown',
-    data: [
-      {
-        name: 'Class Archetypes',
-        key: 'archtype-dropdown',
-        data: [
-            alternateClassFeatures,
-            {
-              name: 'Ranger',
-              key: 'ranger-archetype-dropdown',
-              data: [
-                urbanRanger
-              ]
-            }
-        ]
-      }
-    ]
+    data: [{
+      name: 'Class Archetypes',
+      key: 'archtype-dropdown',
+      data: [
+        alternateClassFeatures,
+        {
+          name: 'Ranger',
+          key: 'ranger-archetype-dropdown',
+          data: [
+            urbanRanger
+          ]
+        }
+      ]
+    }]
   },
   {
     name: 'Rules',
@@ -91,24 +94,47 @@ const buildRoutes = (routeData, prefix='') => {
 */
 
 export const navigationRoutes = {
-  '/': () => <MarkdownRenderer page={home} />,
-  '/home': () => <MarkdownRenderer page={home} />,
-  '/character/class-archetypes/archetypes-and-class-features': () => <MarkdownRenderer page={alternateClassFeatures} />,
-  '/character/class-archetypes/ranger/urban-ranger': () => <MarkdownRenderer page={urbanRanger} />,
-  '/rules/combat/golarion-action-economy': () => <MarkdownRenderer page={golarionActionEconomy} />,
+  '/': () => < MarkdownRenderer page = {
+    home
+  }
+  />,
+  '/home': () => < MarkdownRenderer page = {
+    home
+  }
+  />,
+  '/character/class-archetypes/archetypes-and-class-features': () => < MarkdownRenderer page = {
+    alternateClassFeatures
+  }
+  />,
+  '/character/class-archetypes/ranger/urban-ranger': () => < MarkdownRenderer page = {
+    urbanRanger
+  }
+  />,
+  '/rules/combat/golarion-action-economy': () => < MarkdownRenderer page = {
+    golarionActionEconomy
+  }
+  />,
 };
 
 export const NavigationContext = createContext();
 
-const NavigationProvider = ({children}) => {
-  const [activePage, setActivePage ] = useState(home);
+const NavigationProvider = ({
+  children
+}) => {
+  const [activePage, setActivePage] = useState(home);
 
-  const store = { activePage, setActivePage };
+  const store = {
+    activePage,
+    setActivePage
+  };
 
-  return (
-    <NavigationContext.Provider value={store}>
-      {children}
-    </NavigationContext.Provider>
+  return ( <
+    NavigationContext.Provider value = {
+      store
+    } > {
+      children
+    } <
+    /NavigationContext.Provider>
   );
 }
 
