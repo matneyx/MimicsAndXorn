@@ -3,8 +3,9 @@ import MarkdownRenderer from './MarkdownRenderer';
 
 /* eslint-disable import/no-webpack-loader-syntax */
 import intro from '!!raw-loader!../data/Intro.md';
-import acf from '!!raw-loader!../data/character/AlternateClassFeatures.md';
+import acf from '!!raw-loader!../data/character/archetypes/AlternateClassFeatures.md';
 import gae from '!!raw-loader!../data/rules/combat/GolarionActionEconomy.md';
+import ur from '!!raw-loader!../data/character/archetypes/ranger/UrbanRanger.md';
 /* eslint-enable */
 
 const home = {
@@ -20,10 +21,16 @@ const golarionActionEconomy = {
 };
 
 const alternateClassFeatures = {
-  name: 'Alternate Class Features',
-  key: 'alternate-class-features',
+  name: 'Archetypes and Class Features',
+  key: 'acf-link',
   data: acf
-}
+};
+
+const urbanRanger = {
+  name: 'Urban Ranger',
+  key: 'urban-ranger-link',
+  data: ur
+};
 
 export const navigationMenus = [
   home,
@@ -31,7 +38,20 @@ export const navigationMenus = [
     name: 'Character',
     key: 'character-dropdown',
     data: [
-      alternateClassFeatures
+      {
+        name: 'Class Archetypes',
+        key: 'archtype-dropdown',
+        data: [
+            alternateClassFeatures,
+            {
+              name: 'Ranger',
+              key: 'ranger-archetype-dropdown',
+              data: [
+                urbanRanger
+              ]
+            }
+        ]
+      }
     ]
   },
   {
@@ -79,7 +99,7 @@ export const navigationRoutes = {
 
 export const NavigationContext = createContext();
 
-const NavigationProvider =  ({children}) => {
+const NavigationProvider = ({children}) => {
   const [activePage, setActivePage ] = useState(home);
 
   const store = { activePage, setActivePage };
