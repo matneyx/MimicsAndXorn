@@ -21,7 +21,7 @@ const golarionActionEconomy = {
   name: 'Golarion Action Economy',
   key: 'golarion-action-economy',
   data: gae,
-  homebreweryLink: 'https://www.google.com'
+  homebreweryLink: 'https://homebrewery.naturalcrit.com/print/1C1qVXiiGvutfDjl79baihNsRXxhrx6hucoEY-uyzXZu8?dialog=true'
 };
 
 const alternateClassFeatures = {
@@ -34,7 +34,7 @@ const urbanRanger = {
   name: 'Urban Ranger',
   key: 'urban-ranger-link',
   data: ur,
-  homebreweryLink: 'https://www.nfl.com'
+  homebreweryLink: 'https://homebrewery.naturalcrit.com/print/1pfwW2vADyEwMgeHpgjxqR0IpqFpU88AA_xyoaL4ZMSO4?dialog=true'
 };
 
 export const navigationMenus = [
