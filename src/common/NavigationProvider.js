@@ -8,7 +8,7 @@ import gae from '!!raw-loader!../data/rules/combat/GolarionActionEconomy.md';
 import ur from '!!raw-loader!../data/character/archetypes/ranger/UrbanRanger.md';
 /* eslint-enable */
 
-const home = {
+export const home = {
   name: 'Home',
   key: 'home',
   data: intro,
@@ -91,10 +91,11 @@ const buildRoutes = (routeData, prefix='') => {
 */
 
 export const navigationRoutes = {
-  '/': () => <MarkdownRenderer data={intro} />,
-  '/home': () => <MarkdownRenderer data={intro} />,
-  '/character/alternate-class-features': () => <MarkdownRenderer data={acf} />,
-  '/rules/combat/golarion-action-economy': () => <MarkdownRenderer data={gae} />,
+  '/': () => <MarkdownRenderer page={home} />,
+  '/home': () => <MarkdownRenderer page={home} />,
+  '/character/class-archetypes/archetypes-and-class-features': () => <MarkdownRenderer page={alternateClassFeatures} />,
+  '/character/class-archetypes/ranger/urban-ranger': () => <MarkdownRenderer page={urbanRanger} />,
+  '/rules/combat/golarion-action-economy': () => <MarkdownRenderer page={golarionActionEconomy} />,
 };
 
 export const NavigationContext = createContext();

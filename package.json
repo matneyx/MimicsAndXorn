@@ -96,6 +96,10 @@
     "mime": ">=2.4.6",
     "open": "^7.3.0",
     "raw-loader": "^4.0.2",
+    "remark-collapse": "^0.1.2",
+    "remark-normalize-headings": "^2.0.0",
+    "remark-slug": "^6.0.0",
+    "remark-toc": "^7.0.0",
     "webpack-dev-server": ">=3.11.0",
     "yargs-parser": ">=5.0.0-security.0"
   },
