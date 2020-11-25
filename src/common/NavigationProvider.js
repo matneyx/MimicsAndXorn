@@ -94,26 +94,11 @@ const buildRoutes = (routeData, prefix='') => {
 */
 
 export const navigationRoutes = {
-  '/': () => < MarkdownRenderer page = {
-    home
-  }
-  />,
-  '/home': () => < MarkdownRenderer page = {
-    home
-  }
-  />,
-  '/character/class-archetypes/archetypes-and-class-features': () => < MarkdownRenderer page = {
-    alternateClassFeatures
-  }
-  />,
-  '/character/class-archetypes/ranger/urban-ranger': () => < MarkdownRenderer page = {
-    urbanRanger
-  }
-  />,
-  '/rules/combat/golarion-action-economy': () => < MarkdownRenderer page = {
-    golarionActionEconomy
-  }
-  />,
+  '/': () => <MarkdownRenderer page = {home} />,
+  '/home': () => <MarkdownRenderer page = {home} />,
+  '/character/class-archetypes/archetypes-and-class-features': () => <MarkdownRenderer page = {alternateClassFeatures} />,
+  '/character/class-archetypes/ranger/urban-ranger': () => <MarkdownRenderer page={urbanRanger} />,
+  '/rules/combat/golarion-action-economy': () => <MarkdownRenderer page={golarionActionEconomy} />,
 };
 
 export const NavigationContext = createContext();
@@ -128,13 +113,10 @@ const NavigationProvider = ({
     setActivePage
   };
 
-  return ( <
-    NavigationContext.Provider value = {
-      store
-    } > {
-      children
-    } <
-    /NavigationContext.Provider>
+  return (
+    <NavigationContext.Provider value={store}>
+      {children}
+    </NavigationContext.Provider>
   );
 }
 
