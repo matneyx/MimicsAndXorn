@@ -18,9 +18,9 @@ const MarkdownRenderer = ({page}) => {
       children={page.data}
       plugins={[
         gfm,
-        toc,
         normalizeHeadings,
-        slug
+        slug,
+        toc,
       ]} />
   );
 };

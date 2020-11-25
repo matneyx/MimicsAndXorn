@@ -23,7 +23,6 @@ const StyledImg = styled.img`
 const NavLink = (props) => <Nav.Link {...setLinkProps(props)}>{props.children}</Nav.Link>;
 const NavDropdownItem = (props) => <NavDropdown.Item {...setLinkProps(props)}>{props.children}</NavDropdown.Item>;
 
-
 const buildNavbar = (activePage, navbarData, prefix = '', topLevel = true) => {
   const navbarLinks = []
 
