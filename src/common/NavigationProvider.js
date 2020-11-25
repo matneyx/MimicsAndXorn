@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react';
+import MarkdownRenderer from './MarkdownRenderer';
 
 /* eslint-disable import/no-webpack-loader-syntax */
 import intro from '!!raw-loader!../data/Intro.md';
@@ -7,15 +8,15 @@ import gae from '!!raw-loader!../data/rules/combat/GolarionActionEconomy.md';
 import ur from '!!raw-loader!../data/character/archetypes/ranger/UrbanRanger.md';
 /* eslint-enable */
 
-const home = {
+export const home = {
   name: 'Home',
-  key: 'home-link',
+  key: 'home',
   data: intro,
 };
 
 const golarionActionEconomy = {
   name: 'Golarion Action Economy',
-  key: 'gae-link',
+  key: 'golarion-action-economy',
   data: gae
 };
 
@@ -65,6 +66,37 @@ export const navigationMenus = [
     }]
   }
 ];
+
+// TODO: Figure out how to Pre-render this
+/*
+const buildRoutes = (routeData, prefix='') => {
+  const newRoutes = [];
+
+  if(Array.isArray(routeData)){
+    routeData.forEach(inner => {
+      if(Array.isArray(inner.data)) {
+        newRoutes.push(...buildRoutes(inner.data, `${prefix}/${inner.name.toLowerCase()}`));
+      } else {
+        newRoutes.push(...buildRoutes(inner, prefix));
+      }
+    });
+  } else {
+    newRoutes.push({
+      [`${prefix}/${routeData.key}`] : () => <MarkdownRenderer data={routeData.data} />
+    });
+  }
+
+  return newRoutes;
+};
+*/
+
+export const navigationRoutes = {
+  '/': () => <MarkdownRenderer page={home} />,
+  '/home': () => <MarkdownRenderer page={home} />,
+  '/character/class-archetypes/archetypes-and-class-features': () => <MarkdownRenderer page={alternateClassFeatures} />,
+  '/character/class-archetypes/ranger/urban-ranger': () => <MarkdownRenderer page={urbanRanger} />,
+  '/rules/combat/golarion-action-economy': () => <MarkdownRenderer page={golarionActionEconomy} />,
+};
 
 export const NavigationContext = createContext();
 

@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { setLinkProps } from 'hookrouter';
 import styled from 'styled-components';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { NavigationContext, navigationMenus } from './NavigationProvider';
@@ -19,8 +20,10 @@ const StyledImg = styled.img`
   max-width: 50%;
 `;
 
+const NavLink = (props) => <Nav.Link {...setLinkProps(props)}>{props.children}</Nav.Link>;
+const NavDropdownItem = (props) => <NavDropdown.Item {...setLinkProps(props)}>{props.children}</NavDropdown.Item>;
 
-const buildNavbar = (activePage, setActivePage, navbarData, topLevel = true) => {
+const buildNavbar = (activePage, navbarData, prefix = '', topLevel = true) => {
   const navbarLinks = []
 
   if(Array.isArray(navbarData)) {
@@ -31,24 +34,30 @@ const buildNavbar = (activePage, setActivePage, navbarData, topLevel = true) => 
             title={inner.name}
             key={inner.key}
             id="basic-nav-dropdown" >
-            {buildNavbar(activePage, setActivePage, inner.data, false)}
+            {buildNavbar(activePage, inner.data, `${prefix}/${inner.name.replace(/\s+/g, '-').toLowerCase()}`, false)}
           </NavDropdown>);
       } else {
-        navbarLinks.push(buildNavbar(activePage, setActivePage, inner, topLevel));
+        navbarLinks.push(buildNavbar(activePage, inner, prefix, topLevel));
       }
     });
   } else {
       if(topLevel) {
         navbarLinks.push(
-          <Nav.Link key={navbarData.key} active={activePage.key === navbarData.key} onClick={() => setActivePage(navbarData)}>
+          <NavLink
+            key={navbarData.key}
+            active={activePage.key === navbarData.key}
+            href={`${prefix}/${navbarData.name.replace(/\s+/g, '-').toLowerCase()}`}>
             {navbarData.name}
-          </Nav.Link>
+          </NavLink>
         );
       } else {
         navbarLinks.push(
-          <NavDropdown.Item key={navbarData.key} active={activePage.key === navbarData.key} onClick={() => setActivePage(navbarData)}>
+          <NavDropdownItem
+            key={navbarData.key}
+            active={activePage.key === navbarData.key}
+            href={`${prefix}/${navbarData.name.replace(/\s+/g, '-').toLowerCase()}`}>
             {navbarData.name}
-          </NavDropdown.Item>
+          </NavDropdownItem>
         );
       }
   }
@@ -57,7 +66,7 @@ const buildNavbar = (activePage, setActivePage, navbarData, topLevel = true) => 
 }
 
 const MxNavbar =  () => {
-  const { activePage, setActivePage } = useContext(NavigationContext);
+  const { activePage } = useContext(NavigationContext);
 
   return (
     <StyledNavbar bg="light" expand="lg">
@@ -68,7 +77,7 @@ const MxNavbar =  () => {
           alt="Mimics & Xorn" />
       </Navbar.Brand>
       <Nav className="mr-auto">
-        {buildNavbar(activePage, setActivePage, navigationMenus)}
+        {buildNavbar(activePage, navigationMenus)}
       </Nav>
     </StyledNavbar>
 )};
