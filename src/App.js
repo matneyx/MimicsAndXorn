@@ -1,9 +1,8 @@
 import React from 'react';
-import { useRoutes } from 'hookrouter';
+import { useRoutes } from 'react-router-dom';
 import styled from 'styled-components';
 import Navbar from './common/Navbar';
-import NavigationProvider, { navigationRoutes, home } from './common/NavigationProvider';
-import MarkdownRenderer from './common/MarkdownRenderer';
+import NavigationProvider, { navigationRoutes } from './common/NavigationProvider';
 
 const MainBody = styled.div`
   background-color: #EEE5CE;
@@ -16,13 +15,13 @@ const MainBody = styled.div`
 
 const App = () =>
 {
-    const routeResults = useRoutes(navigationRoutes);
+    const routes = useRoutes(navigationRoutes, '/MimicsAndXorn');
 
     return (
         <NavigationProvider>
           <Navbar />
           <MainBody>
-            {routeResults || <MarkdownRenderer page={home} />}
+            {routes}
           </MainBody>
         </NavigationProvider>
     );
