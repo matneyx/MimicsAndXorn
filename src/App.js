@@ -18,6 +18,8 @@ const App = () =>
 {
     const routeResults = useRoutes(navigationRoutes);
 
+    console.log(routeResults);
+
     return (
         <NavigationProvider>
           <Navbar />
