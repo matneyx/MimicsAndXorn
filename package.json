@@ -8,7 +8,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "flow": "flow"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,6 @@
   },
   "homepage": "https://matneyx.github.io/MimicsAndXorn",
   "dependencies": {
-    "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.2",
     "@svgr/webpack": "5.4.0",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
@@ -88,8 +88,12 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-flow": "^7.12.1",
     "braces": ">=3.0.2",
     "eslint": ">=7.13.0",
+    "flow-bin": "^0.140.0",
     "gh-pages": "^3.1.0",
     "js-yaml": ">=3.14.0",
     "mime": ">=2.4.6",
@@ -165,7 +169,8 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      "@babel/preset-flow"
     ]
   },
   "eslintConfig": {
