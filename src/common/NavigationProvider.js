@@ -9,6 +9,7 @@ import intro from '!!raw-loader!../data/Intro.md';
 import acf from '!!raw-loader!../data/character/archetypes/AlternateClassFeatures.md';
 import gae from '!!raw-loader!../data/rules/combat/GolarionActionEconomy.md';
 import ur from '!!raw-loader!../data/character/archetypes/ranger/UrbanRanger.md';
+import atts from '!!raw-loader!../data/character/Attributes.md';
 /* eslint-enable */
 
 export const home = {
@@ -37,25 +38,34 @@ const urbanRanger = {
   homebreweryLink: 'https://homebrewery.naturalcrit.com/print/1pfwW2vADyEwMgeHpgjxqR0IpqFpU88AA_xyoaL4ZMSO4?dialog=true'
 };
 
+const attributes = {
+  name: 'Attributes',
+  key: 'attributes-link',
+  data: atts
+}
+
 export const navigationMenus = [
   home,
   {
     name: 'Character',
     key: 'character-dropdown',
-    data: [{
-      name: 'Class Archetypes',
-      key: 'archtype-dropdown',
-      data: [
-        alternateClassFeatures,
-        {
-          name: 'Ranger',
-          key: 'ranger-archetype-dropdown',
-          data: [
-            urbanRanger
-          ]
-        }
-      ]
-    }]
+    data: [
+      attributes,
+      {
+        name: 'Class Archetypes',
+        key: 'archtype-dropdown',
+        data: [
+          alternateClassFeatures,
+          {
+            name: 'Ranger',
+            key: 'ranger-archetype-dropdown',
+            data: [
+              urbanRanger
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     name: 'Rules',
@@ -96,6 +106,7 @@ const buildRoutes = (routeData, prefix='') => {
 export const navigationRoutes = [
   { path:'/', element: <MarkdownRenderer page = {home} />},
   { path:'/home', element: <MarkdownRenderer page = {home} />},
+  { path:'/character/attributes', element: <MarkdownRenderer page={attributes} />},
   { path:'/character/class-archetypes/archetypes-and-class-features', element: <MarkdownRenderer page = {alternateClassFeatures} />},
   { path:'/character/class-archetypes/ranger/urban-ranger', element: <MarkdownRenderer page={urbanRanger} />},
   { path:'/rules/combat/golarion-action-economy', element: <MarkdownRenderer page={golarionActionEconomy} />},
