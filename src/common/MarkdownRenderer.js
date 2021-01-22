@@ -10,6 +10,7 @@ import {
 } from './NavigationProvider';
 import gfm from 'remark-gfm';
 import normalizeHeadings from 'remark-normalize-headings';
+import removeComments from 'remark-remove-comments';
 
 const MarkdownRenderer = ({page}) => {
   const { setActivePage } = useContext(NavigationContext);
@@ -24,6 +25,7 @@ const MarkdownRenderer = ({page}) => {
         plugins={[
           gfm,
           normalizeHeadings,
+          removeComments
         ]} />
       {page.homebreweryLink &&
         <a className="github-fork-ribbon right-bottom fixed"

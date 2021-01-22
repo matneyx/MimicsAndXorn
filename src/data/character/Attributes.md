@@ -1,3 +1,8 @@
+<!--
+  A great resource for these descriptions is:
+  https://wodan.obsidianportal.com/wikis/attributes
+-->
+
 # Attributes
 Each character has **nine** attributes, which are separated into three categories, with each category having each a Power, Finesse, and Resistance attribute.
 
@@ -20,13 +25,13 @@ The three categories are: **Physical**, **Mental**, and **Social**.
   * **Dexterity** (*Finesse*): Dexterity (Dex) represents your character's agility, reflexes, and balance.  It impacts how well your character can dodge (as represented by Armor Class), and how accurate they are with ranged weapons such as bows and arrows.
   * **Constitution** (*Resistance*):  Constitution (Con) represents your character's health and stamina.  It impacts your character's hit points, as well as how long they can go without needing a Short or Long rest.
 * **Mental**
-  * **Intelligence** (*Power*): Intelligence (Int) represents the width and depth of your character's knowledge.  It impacts how many languages your character can know.
-  * **Wits** (*Finesse*): Wits represents ...
-  * **Resolve** (*Resistance*): Resistance (Res) represents ...
+  * **Intelligence** (*Power*): Intelligence (Int) represents the width and depth of your character's knowledge, and their ability to remember information.  It impacts how many languages your character can know.
+  * **Wits** (*Finesse*): Wits represents how well your character can think on their feet, and react quickly to a certain situation.  It also represents your character's general cleverness, how well they can put ideas together, and how well they understand cause and effect.
+  * **Resolve** (*Resistance*): Resistance (Res) represents your character's strength of will and intellectual focus.
 * **Social**
-  * **Presence** (*Power*): Presence (Pres) represents ...
-  * **Manipulation** (*Finesse*): Manipulation (Man) represents ...
-  * **Composure** (*Resistance*): Composure (Comp) represents ...
+  * **Presence** (*Power*): Presence (Pres) represents your character's very identity, and sheer command over the attention of others.  It is the ability to impose your character's will on others through social aggression and power.
+  * **Manipulation** (*Finesse*): Manipulation (Man) represents how well your character can bend others to their will, and to get others to do what your character wants through subtlety.
+  * **Composure** (*Resistance*): Composure (Comp) represents your character's ability to stay focused and calm under emotional pressure, and to resist emotional manipulation.
 
 ## Speed, the 10th Attribute
 

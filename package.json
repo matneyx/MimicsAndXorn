@@ -74,6 +74,7 @@
     "react-refresh": "^0.8.3",
     "react-router-dom": "^6.0.0-beta.0",
     "remark-gfm": "^1.0.0",
+    "remark-remove-comments": "^0.1.3",
     "resolve": "1.18.1",
     "resolve-url-loader": "^3.1.2",
     "sass-loader": "8.0.2",
