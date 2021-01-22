@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { NavigationContext, navigationMenus } from './NavigationProvider';
@@ -40,23 +40,21 @@ const buildNavbar = (activePage, navbarData, prefix = '', topLevel = true) => {
   } else {
       if(topLevel) {
         navbarLinks.push(
-          <Link
-            as={Nav.Link}
+          <Nav.Link
+            as={NavLink}
             key={navbarData.key}
-            className={'nav-link' + (activePage.key === navbarData.key ? ' active' : '')}
             to={`${prefix}/${navbarData.name.replace(/\s+/g, '-').toLowerCase()}`}>
             {navbarData.name}
-          </Link>
+          </Nav.Link>
         );
       } else {
         navbarLinks.push(
-          <Link
-            as={Nav.DropdownItem}
+          <NavDropdown.Item
+            as={NavLink}
             key={navbarData.key}
-            className={'nav-link' + (activePage.key === navbarData.key ? ' active' : '')}
             to={`${prefix}/${navbarData.name.replace(/\s+/g, '-').toLowerCase()}`}>
             {navbarData.name}
-          </Link>
+          </NavDropdown.Item>
         );
       }
   }
