@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { setLinkProps } from 'hookrouter';
+import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { NavigationContext, navigationMenus } from './NavigationProvider';
@@ -19,9 +19,6 @@ const StyledImg = styled.img`
   max-height: 50%;
   max-width: 50%;
 `;
-
-const NavLink = (props) => <Nav.Link {...setLinkProps(props)}>{props.children}</Nav.Link>;
-const NavDropdownItem = (props) => <NavDropdown.Item {...setLinkProps(props)}>{props.children}</NavDropdown.Item>;
 
 const buildNavbar = (activePage, navbarData, prefix = '', topLevel = true) => {
   const navbarLinks = []
@@ -43,21 +40,23 @@ const buildNavbar = (activePage, navbarData, prefix = '', topLevel = true) => {
   } else {
       if(topLevel) {
         navbarLinks.push(
-          <NavLink
+          <Link
+            as={Nav.Link}
             key={navbarData.key}
-            active={activePage.key === navbarData.key}
-            href={`${prefix}/${navbarData.name.replace(/\s+/g, '-').toLowerCase()}`}>
+            className={'nav-link' + (activePage.key === navbarData.key ? ' active' : '')}
+            to={`${prefix}/${navbarData.name.replace(/\s+/g, '-').toLowerCase()}`}>
             {navbarData.name}
-          </NavLink>
+          </Link>
         );
       } else {
         navbarLinks.push(
-          <NavDropdownItem
+          <Link
+            as={Nav.DropdownItem}
             key={navbarData.key}
-            active={activePage.key === navbarData.key}
-            href={`${prefix}/${navbarData.name.replace(/\s+/g, '-').toLowerCase()}`}>
+            className={'nav-link' + (activePage.key === navbarData.key ? ' active' : '')}
+            to={`${prefix}/${navbarData.name.replace(/\s+/g, '-').toLowerCase()}`}>
             {navbarData.name}
-          </NavDropdownItem>
+          </Link>
         );
       }
   }
@@ -77,7 +76,7 @@ const MxNavbar =  () => {
           alt="Mimics & Xorn" />
       </Navbar.Brand>
       <Nav className="mr-auto">
-        {buildNavbar(activePage, navigationMenus)}
+        {buildNavbar(activePage, navigationMenus, 'MimicsAndXorn')}
       </Nav>
     </StyledNavbar>
 )};

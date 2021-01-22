@@ -85,7 +85,7 @@ const buildRoutes = (routeData, prefix='') => {
     });
   } else {
     newRoutes.push({
-      [`${prefix}/${routeData.key}`] : () => <MarkdownRenderer data={routeData.data} />
+      path: `${prefix}/${routeData.key}`, element: <MarkdownRenderer data={routeData.data} />
     });
   }
 
@@ -93,13 +93,13 @@ const buildRoutes = (routeData, prefix='') => {
 };
 */
 
-export const navigationRoutes = {
-  '/': () => <MarkdownRenderer page = {home} />,
-  '/home': () => <MarkdownRenderer page = {home} />,
-  '/character/class-archetypes/archetypes-and-class-features': () => <MarkdownRenderer page = {alternateClassFeatures} />,
-  '/character/class-archetypes/ranger/urban-ranger': () => <MarkdownRenderer page={urbanRanger} />,
-  '/rules/combat/golarion-action-economy': () => <MarkdownRenderer page={golarionActionEconomy} />,
-};
+export const navigationRoutes = [
+  { path:'/', element: <MarkdownRenderer page = {home} />},
+  { path:'/home', element: <MarkdownRenderer page = {home} />},
+  { path:'/character/class-archetypes/archetypes-and-class-features', element: <MarkdownRenderer page = {alternateClassFeatures} />},
+  { path:'/character/class-archetypes/ranger/urban-ranger', element: <MarkdownRenderer page={urbanRanger} />},
+  { path:'/rules/combat/golarion-action-economy', element: <MarkdownRenderer page={golarionActionEconomy} />},
+];
 
 export const NavigationContext = createContext();
 

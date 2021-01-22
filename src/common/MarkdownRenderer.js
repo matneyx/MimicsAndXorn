@@ -9,9 +9,7 @@ import {
   NavigationContext
 } from './NavigationProvider';
 import gfm from 'remark-gfm';
-import toc from 'remark-toc';
 import normalizeHeadings from 'remark-normalize-headings';
-import slug from 'remark-slug';
 
 const MarkdownRenderer = ({page}) => {
   const { setActivePage } = useContext(NavigationContext);
@@ -26,11 +24,9 @@ const MarkdownRenderer = ({page}) => {
         plugins={[
           gfm,
           normalizeHeadings,
-          slug,
-          toc,
         ]} />
       {page.homebreweryLink &&
-        <a class="github-fork-ribbon right-bottom fixed"
+        <a className="github-fork-ribbon right-bottom fixed"
           target="__blank"
           href={page.homebreweryLink}
           data-ribbon="Get the PDF!"
