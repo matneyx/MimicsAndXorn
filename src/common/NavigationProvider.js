@@ -10,6 +10,8 @@ import acf from '!!raw-loader!../data/character/archetypes/AlternateClassFeature
 import gae from '!!raw-loader!../data/rules/combat/GolarionActionEconomy.md';
 import ur from '!!raw-loader!../data/character/archetypes/ranger/UrbanRanger.md';
 import atts from '!!raw-loader!../data/character/Attributes.md';
+import htp from '!!raw-loader!../data/basics/HowToPlay.md';
+import cc from '!!raw-loader!../data/basics/CharacterCreation.md';
 /* eslint-enable */
 
 export const home = {
@@ -17,6 +19,18 @@ export const home = {
   key: 'home',
   data: intro,
 };
+
+const howToPlay = {
+  name: 'How to Play',
+  key: 'how-to-play',
+  data: htp
+}
+
+const characterCreation = {
+  name: 'Character Creation',
+  key: 'character-creation',
+  data: cc
+}
 
 const golarionActionEconomy = {
   name: 'Golarion Action Economy',
@@ -46,6 +60,14 @@ const attributes = {
 
 export const navigationMenus = [
   home,
+  {
+    name: 'Basics',
+    key: 'basics-dropdown',
+    data: [
+      howToPlay,
+      characterCreation
+    ]
+  },
   {
     name: 'Character',
     key: 'character-dropdown',
@@ -106,6 +128,8 @@ const buildRoutes = (routeData, prefix='') => {
 export const navigationRoutes = [
   { path:'/', element: <MarkdownRenderer page = {home} />},
   { path:'/home', element: <MarkdownRenderer page = {home} />},
+  { path:'/basics/how-to-play', element: <MarkdownRenderer page={howToPlay} />},
+  { path:'/basics/character-creation', element: <MarkdownRenderer page={characterCreation} />},
   { path:'/character/attributes', element: <MarkdownRenderer page={attributes} />},
   { path:'/character/class-archetypes/archetypes-and-class-features', element: <MarkdownRenderer page = {alternateClassFeatures} />},
   { path:'/character/class-archetypes/ranger/urban-ranger', element: <MarkdownRenderer page={urbanRanger} />},
