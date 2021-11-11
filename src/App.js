@@ -15,7 +15,7 @@ const MainBody = styled.div`
 
 const App = () =>
 {
-    const routes = useRoutes(navigationRoutes, '/MimicsAndXorn');
+    const routes = useRoutes(navigationRoutes);
 
     return (
         <NavigationProvider>

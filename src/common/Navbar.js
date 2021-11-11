@@ -74,7 +74,7 @@ const MxNavbar =  () => {
           alt="Mimics & Xorn" />
       </Navbar.Brand>
       <Nav className="mr-auto">
-        {buildNavbar(activePage, navigationMenus, 'MimicsAndXorn')}
+        {buildNavbar(activePage, navigationMenus)}
       </Nav>
     </StyledNavbar>
 )};

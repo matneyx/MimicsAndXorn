@@ -6,7 +6,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-  <BrowserRouter pathname='/MimicsAndXorn'>
+  <BrowserRouter basename='/MimicsAndXorn'>
     <App />
   </BrowserRouter>,
   document.getElementById('root')
