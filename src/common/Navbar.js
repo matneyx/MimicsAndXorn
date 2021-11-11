@@ -67,7 +67,7 @@ const MxNavbar =  () => {
 
   return (
     <StyledNavbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/MimicsAndXorn/home">
         <StyledImg
           src={logo}
           className="d-inline-block align-top"
